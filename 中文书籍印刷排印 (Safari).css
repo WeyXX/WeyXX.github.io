@@ -1,0 +1,194 @@
+/*
+	Georgia
+
+	Demo css to show basic, blog-like styling
+
+	Visit http://www.ulyssesapp.com/styles for full reference
+
+*/
+
+
+
+body {
+  text-align:		justify; 
+  font-family:		"Songti SC"; "宋体" 
+  font-size:		13pt;
+  letter-spacing:   0.019em;
+  line-height:		1.8em;
+  margin:			auto;
+  padding:			15em 3em 10em;
+  max-width:		30em;
+  } 
+
+strong { font-weight: 900; }
+
+a {outline:none !important; font-weight:bold; text-decoration:none;}
+a:link {color:#c00;}
+a:visited {color:#606;}
+a:hover {color:#606;}
+a:active {color:#900; outline:none;}
+
+h1 {
+  font-family:		"方正小标宋_GBK", "FZXBS_GBK", "FZXiaoBiaoSong-B05", "Songti TC", "华文中宋", "宋体";
+  font-size:		160%;
+  line-height:		1.5em;
+  font-style:		normal;
+  margin:			0;
+  padding:			1em 0em;
+}
+
+h2 {
+  font-family:		"Hiragino Sans GB"; 
+  font-size:		130%;
+  line-height:		140%;
+  margin:			0;
+  padding:			2.5em 1.5em 0em;
+}
+
+h3 {
+  font-family:		Kaiti, "楷体", "华文楷体", "楷体_GB2312";
+  text-transform:	uppercase;
+  font-size:		110%;
+  letter-spacing:	0.1em;
+  margin:			0;
+  padding:			0.75em 2em 0em;
+}
+
+h4 {
+  font-weight:		normal;
+  font-size:		100%;
+  letter-spacing:	0.2em;
+  margin:			1.5em 2em 0.75em;
+}
+
+h5 {
+  font-weight:		normal;
+  font-style:		italic;
+  font-size:		150%;
+  margin:			1.5em 2em 0.75em;
+}
+
+h6 {
+  font-weight:		bold;
+  font-size:		100%;
+  letter-spacing:	0.1em;
+  margin:			1.5em 2em 0.75em;
+}
+
+p {
+  text-align:		justify; 
+  font-size:		1em;
+  margin:			0;
+  padding:			0em 0em 0em;
+  text-indent: 		2.038em;
+}
+
+/*
+h1 + p {
+  font-size:			150%;
+  margin:			1em 0;
+  text-indent:		2em;
+}
+*/
+
+p + p {
+  text-indent:		2.038em;
+  padding:			0em 0em 0em;
+}
+
+h1 + p {
+  text-indent: 2.038em;
+}
+
+p + ul, p + ol, p + dl {margin-bottom: 2em;}
+
+@font-face {
+    font-family:        FS2312_123;
+    src:                local('仿宋_GB2312');
+    unicode-range:      U+0030, U+0031, U+0032, U+0033, U+0034, U+0035, U+0036, U+0037, U+0038, U+0039;
+}
+@font-face {
+    font-family:        STFS_ABC;
+    src:                local('STFangsong','华文仿宋');
+    unicode-range:      U+0041, U+0061, U+0042, U+0062, U+0043, U+0063, U+0044, U+0064, U+0045, U+0065, U+0046, U+0066, U+0047, U+0067, U+0048, U+0068, U+0049, U+0069, U+004A, U+006A, U+004B, U+006B, U+004C, U+006C, U+004D, U+006D, U+004E, U+006E, U+004F, U+006F, U+0050, U+0070, U+0051, U+0071, U+0052, U+0072, U+0053, U+0073, U+0054, U+0074, U+0055, U+0075, U+0056, U+0076, U+0057, U+0077, U+0058, U+0078, U+0059, U+0079, U+005A, U+007A;
+}
+
+figure {margin: 1em 0em 0.5em 0em;}
+figure img {
+    width:      100%;}
+figcaption {
+    font-family:FS2312_123, STFS_ABC, Fangsong, "仿宋", "华文仿宋", "仿宋_GB2312";
+    font-size:  90%;
+    color:      #777;
+    text-align: center;
+}
+
+blockquote {border-left:2em /*solid #eee*/; padding-left:2em; margin:1em 2em 0;}
+blockquote p {text-indent: 0 !important;font-family:Kaiti SC; }
+blockquote small {display:block; line-height:1.7em;}
+
+ul, ol, dl {
+  text-align: justify; 
+  }
+
+ul, ol {
+  margin-left:2em;
+  padding-left: 1.2em;
+}
+
+ul li, ol li {
+	padding-left: 0.3em;
+    margin-top: 0.6em;
+}
+
+li p {margin-top: 0px; text-indent: 0em;}
+li {margin-bottom: 0.6em;}
+
+code {font-family: Menlo, monospace; font-size:80%;}
+p > code {padding:0.2em 0.4em; background:#eee;}
+pre {text-align:left; overflow-x: scroll; background: #eee; padding: 10pt 20pt; border-radius: 5pt;}
+
+hr {border: none; margin:1.5em 0 1.5em;font-size:150%;color: #ddd; height: 1em;text-align: center;}
+hr:after {content: "✢";}
+
+h1 + hr {margin:-0.5em 0 1.5em; font-size: 400%;}
+
+ol#footnotes { margin-top: 4.5em;border-top: 1px solid #eee; padding-top: 1em; font-size: 80%;padding-left: 1.5em;}
+
+ol#footnotes p {text-indent: 0px;}
+
+@keyframes highfade {
+    0% {
+		background-color: none;
+    }
+    20% {
+		background-color: yellow;
+	}
+    100% {
+		background-color: none;
+    }
+}
+
+@-webkit-keyframes highfade {
+    0% {
+		background-color: none;
+    }
+    20% {
+		background-color: yellow;
+	}
+    100% {
+		background-color: none;
+    }
+}
+
+a:target, ol#footnotes li:target, sup a:target  {
+    animation-name: highfade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: highfade;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
